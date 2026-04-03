@@ -12,7 +12,7 @@
 <nav class="bg-white shadow-sm px-6 py-4 flex justify-between items-center">
     <h1 class="text-xl font-bold text-gray-800">ResumeAI</h1>
     <div class="flex gap-4 items-center">
-        <a href="analyzer.html" class="text-sm text-blue-600 hover:underline">Analyzer</a>
+        <a href="Analyzer.html" class="text-sm text-blue-600 hover:underline">Analyzer</a>
 
         <a href="interview-prep.html" class="text-sm text-blue-600 hover:underline">Interview Prep</a>
 
@@ -59,7 +59,7 @@
     // const BASE_URL = 'http://localhost:8080';
     // Auth check
     const token = localStorage.getItem('token');
-    if (!token) window.location.href = 'login.html';
+    if (!token) window.location.href = 'Login.html';
 
     // Show user email
     const email = localStorage.getItem('userEmail');
@@ -68,7 +68,7 @@
     function logout() {
       localStorage.removeItem('token');
       localStorage.removeItem('userEmail');
-      window.location.href = 'login.html';
+      window.location.href = 'Login.html';
     }
 
     function showError(message) {
