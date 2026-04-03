@@ -38,7 +38,7 @@
 
     <p class="text-center text-sm text-gray-500 mt-4">
         Don't have an account?
-        <a href="register.html" class="text-blue-600 hover:underline font-medium">Register</a>
+        <a href="Register.html" class="text-blue-600 hover:underline font-medium">Register</a>
     </p>
 
 </div>
@@ -85,7 +85,7 @@
           localStorage.setItem('token', data);
           localStorage.setItem('userEmail', email);
           showAlert('success', 'Login successful! Redirecting...');
-          setTimeout(() => window.location.href = 'analyzer.html', 1000);
+          setTimeout(() => window.location.href = 'Analyzer.html', 1000);
         } else {
           showAlert('error', data || 'Login failed. Please try again.');
         }
